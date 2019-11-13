@@ -116,12 +116,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<DataReadResponse> task) {
                         Log.d(LOG_TAG, "onComplete()");
-
-                        List<DataSet> dataSets = task.getResult().getDataSets();
-                        List<Bucket> dataSets2 = task.getResult().getBuckets();
-                        Status dataSets3 = task.getResult().getStatus();
-
-                        Log.d(LOG_TAG, "onComplete()");
 //                        Log.i(LOG_TAG, "Data returned for Data type: " + dataSets.get(0).getDataType().getName());
                     }
                 });
